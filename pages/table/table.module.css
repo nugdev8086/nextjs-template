@@ -1,0 +1,93 @@
+.TableItem {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.TableItem > .checkbox {
+  padding: 10px;
+  padding-left: 14px;
+  width: 48px;
+  height: 44px;
+  margin-right: 5px;
+}
+
+.TableItem > .division {
+  width: 1px;
+  height: 60%;
+  background-color: black;
+}
+
+.TableItem > .id {
+  width: 64px;
+  text-align: center;
+  margin: 10px;
+}
+
+.TableItem > .content {
+  margin-left: 10px;
+  width: calc(100% - 130px);
+  height: 100%;
+}
+
+.Table {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  overflow-x: auto;
+}
+
+.Table > .header {
+  position: sticky;
+  border-bottom: 1px solid black;
+  top: 0;
+  z-index: 1000;
+}
+
+.Table > .footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+  border-top: 1px solid black;
+}
+
+.Table > .footer .ButtonBox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-right: 5px;
+}
+
+.Table > .footer .ButtonBox > button {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 128px;
+}
+
+.CreateItem {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CreateItem > .modalView {
+  width: 600px;
+  height: 600px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
